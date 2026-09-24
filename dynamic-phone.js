@@ -76,3 +76,15 @@ function rememberSource(source) {
 function getRememberedSource() {
   return sessionStorage.getItem(SOURCE_STORAGE_KEY);
 }
+
+// Uses the URL source when available, otherwise falls back to the remembered source.
+function getActiveSource() {
+  const urlSource = getSourceFromUrl();
+
+  if (urlSource) {
+    rememberSource(urlSource);
+    return urlSource;
+  }
+
+  return getRememberedSource();
+}
