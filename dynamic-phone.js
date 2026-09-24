@@ -17,3 +17,29 @@ const PHONE_NUMBERS = {
     tel: "+15551112222"
   }
 };
+
+ google_search: {
+    display: "(555) 222-3333",
+    tel: "+15552223333"
+  },
+
+  nextdoor: {
+    display: "(555) 333-4444",
+    tel: "+15553334444"
+  },
+
+  instagram: {
+    display: "(555) 444-5555",
+    tel: "+15554445555"
+  },
+
+  facebook: {
+    display: "(555) 555-6666",
+    tel: "+15555556666"
+  },
+
+  pinterest: {
+    display: "(555) 666-7777",
+    tel: "+15556667777"
+  }
+};
