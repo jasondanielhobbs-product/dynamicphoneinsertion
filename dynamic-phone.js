@@ -10,3 +10,10 @@ const DEFAULT_PHONE = {
   display: "(555) 123-4567",
   tel: "+15551234567"
 };
+
+const PHONE_NUMBERS = {
+  yelp: {
+    display: "(555) 111-2222",
+    tel: "+15551112222"
+  }
+};
