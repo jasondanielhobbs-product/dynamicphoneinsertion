@@ -43,6 +43,7 @@ const PHONE_NUMBERS = {
     tel: "+15556667777"
   }
 };
+
 const SOURCE_MAP = {
   yelp: "yelp",
   google_search: "google_search",
@@ -51,3 +52,10 @@ const SOURCE_MAP = {
   facebook: "facebook",
   pinterest: "pinterest"
 };
+
+function getSourceFromUrl() {
+  const params = new URLSearchParams(window.location.search);
+  const source = params.get("utm_source");
+
+  return source ? source.trim().toLowerCase() : null;
+}
