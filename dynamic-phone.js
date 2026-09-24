@@ -53,6 +53,8 @@ const SOURCE_MAP = {
   pinterest: "pinterest"
 };
 
+const SOURCE_STORAGE_KEY = "phone_tracking_source";
+
 // Reads the traffic source from the URL.
 // Example URL: https://www.example.com/?utm_source=yelp
 // In this example, "yelp" is the referring source.
@@ -61,4 +63,11 @@ function getSourceFromUrl() {
   const source = params.get("utm_source");
 
   return source ? source.trim().toLowerCase() : null;
+}
+
+// Stores the detected traffic source for the current browser session.
+function rememberSource(source) {
+  if (source) {
+    sessionStorage.setItem(SOURCE_STORAGE_KEY, source);
+  }
 }
