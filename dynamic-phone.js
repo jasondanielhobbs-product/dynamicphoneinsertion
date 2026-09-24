@@ -43,3 +43,11 @@ const PHONE_NUMBERS = {
     tel: "+15556667777"
   }
 };
+const SOURCE_MAP = {
+  yelp: "yelp",
+  google_search: "google_search",
+  nextdoor: "nextdoor",
+  instagram: "instagram",
+  facebook: "facebook",
+  pinterest: "pinterest"
+};
