@@ -53,6 +53,9 @@ const SOURCE_MAP = {
   pinterest: "pinterest"
 };
 
+// Reads the traffic source from the URL.
+// Example URL: https://www.example.com/?utm_source=yelp
+// In this example, "yelp" is the referring source.
 function getSourceFromUrl() {
   const params = new URLSearchParams(window.location.search);
   const source = params.get("utm_source");
