@@ -71,3 +71,8 @@ function rememberSource(source) {
     sessionStorage.setItem(SOURCE_STORAGE_KEY, source);
   }
 }
+
+// Retrieves the previously stored traffic source from the current browser session.
+function getRememberedSource() {
+  return sessionStorage.getItem(SOURCE_STORAGE_KEY);
+}
